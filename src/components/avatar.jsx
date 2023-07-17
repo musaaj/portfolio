@@ -9,6 +9,5 @@ export default function Avatar()
             <button className="p-px px-3 mt-2 font-bold bg-blue-600 rounded-3xl active:bg-blue-800 lg:hover:bg-blue-800 btn-primary">Hire Me</button>
             </div>
         </div>
-
   )
 }
