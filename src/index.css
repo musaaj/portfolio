@@ -77,6 +77,9 @@
 	.end {
 		justify-self: flex-end; 
 	}
+	.scroller-none {
+		scrollbar-width: none;
+	}
 }
 
 @keyframes bg-animation {
