@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Python",
+    "projects": [
+      {
+        "title": "TweetCraze",
+        "picture": "chatbot.jpg",
+        "link": "https://github.com/musaaj/TweetCraze",
+        "stack": "Python, Sqlite3, ChatGPT4",
+        "about": "TweetCraze enables business to engage with their customers on Twitter through AI. TweetCraze can send message, reply to messages , tweet and comment on tweets on your behalf."
+      },
+      {
+        "title": "Orami",
+        "picture": "orami.jpg",
+        "link": "https://github.com/musaaj/orami",
+        "stack": "Python, Sqlite",
+        "about": "A simply fast ORM framework for Sqlite3 suitable for small to mid-sized projects. I have used it in several social media bot projects. I was developed while working on ChatBot"
+      }
+    ]
+  },
+
+  {
+    "title": "Node js",
+    "projects": [
+    ]
+  },
+
+  {
+    "title": "Dartlang",
+    "projects": [
+    ]
+  },
+
+  {
+    "title": "C Programming",
+    "projects": [
+    ]
+  },
+
+  {
+    "title": "Django",
+    "projects": [
+    ]
+  },
+
+  {
+    "title": "React",
+    "projects": [
+    ]
+  },
+
+  {
+    "title": "Tailwindcss",
+    "projects": [
+    ]
+  }
+]

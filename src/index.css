@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{box-sizing: border-box}
+
+
+:root {
+	--bg-primary: #ffffff;
+	--text-primary: black;
+	--stroke-primary: #333333;
+	--fill-primary: #333333;
+  --text-black: black;
+	--text-white: white;
+	--border-color: white;
+	--btn-primary: #2563eb;
+	--btn-primary-active: #1e40af;
+	--btn-label: white;
+	--btn-secondary-hover: #efefef;
+	--bg-topbar: rgba(255, 255, 255, 0.5);
+	font-family: "Roboto", "serif";
+}
+
+:root[data-theme=dark] {
+	--bg-primary: #010c19;
+	--text-primary: #efefff;
+	--stroke-primary: #eeeeee;
+	--fill-primary: #eeeeee;
+	--border-color: #93c5fd;
+	--btn-label: #eff6ff;
+	--btn-secondary-hover: #000f20;
+	--bg-topbar: rgba(0,10,40,0.5);
+}
+
+:root {
+	background-color: var(--bg-primary);
+	color: var(--text-primary);
+	stroke: var(--stroke-primary);
+	fill: var(--stroke-primary);
+}
+.btn-primary {
+	background-color: var(--btn-primary);
+	color: var(--btn-label);
+}
+.btn-primary:active {
+	background-color: var(--btn-primary-active);
+}
+
+.btn-secondary:hover {
+	background-color: var(--btn-secondary-hover);
+}
+
+:root[data-theme=light] .btn-primary {
+	@apply shadow-sm shadow-slate-500;
+
+}
+
+@layer components {
+	.menu-btn {
+		@apply flex items-center justify-center;
+		@apply w-8 h-8;
+		@apply text-3xl text-black;
+		@apply border-solid border-[2px] border-black/10 rounded;
+		@apply active:bg-black/5;
+	}
+	.bg-animated {
+		animation: bg-animation 16s 0s ease-in-out infinite alternate-reverse forwards;
+	}
+	
+	.my-flex {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	.end {
+		justify-self: flex-end; 
+	}
+}
+
+@keyframes bg-animation {
+	0% { background-position: 0% 50%; }
+	25% { background-position: 50% 0%;}
+	50% { background-position: 75% 50%;}
+	75% { background-position: 50% 100%;}
+	100% { background-position: 100% 0%;}
+}
